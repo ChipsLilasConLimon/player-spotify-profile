@@ -458,7 +458,7 @@ def make_svg(
 
     # Set status text based on playing state
     is_playing = track_data.get("is_playing", False)
-    status = "Vibing to:" if is_playing else "Recently played:"
+    status = "Escuchando:" if is_playing else "Última vez escuché:"
 
     # Calculate marquee params from raw text (before XML escaping)
     raw_song = track_data.get("track_name", "Unknown Track")
